@@ -1,8 +1,12 @@
 from django.shortcuts import render
+from django.views.generic import ListView
+from .models import Product
 
 
-def view_index(request):
-    return render(request, 'app/about-us.html')
+class EventListView(ListView):
+    model = Product
+    template_name = 'app/about-us.html'
+    context_object_name = 'object_list'
 
 
 def view_cart(request):
@@ -19,5 +23,3 @@ def view_contact(request):
 
 def view_shop(request):
     return render(request, 'app/shop.html')
-
-
