@@ -1,0 +1,175 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+<html lang="en">
+
+
+<body>
+<!-- LOADER -->
+<!-- LOADER -->
+
+<!-- Start Header Section -->
+
+<!-- End Header Section -->
+
+<!-- Start Breadcrumbs Section -->
+<section class="breadcrumbs-section background_bg" data-img-src="image/cart-breadcrumbs-img.jpg">
+	<div class="container">
+    	<div class="row justify-content-center">
+        	<div class="col-md-12">
+                <div class="page_title text-center">
+                	<h1>my cart</h1>
+                    <ul class="breadcrumb justify-content-center">
+                    	<li><a href="index.html">home</a></li>
+                        <li><a href="#">shop</a></li>
+                        <li><span>cart</span></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- End Header Section -->
+
+
+
+<!-- Start Cart Section -->
+<section class="cart-section pt_large">
+	<div class="container">
+    	<div class="row">
+        	<div class="col-md-12">
+            	<div class="cart-table table-responsive">
+                	<table class="table table-bordered text-center">
+                    	<thead>
+                            <tbody>
+                        	    <tr class="row-1">
+                                    <th class="row-title"><p>Название продукта</p></th>
+                                    <th class="row-title"><p>Цена</p></th>
+                                    <th class="row-title"><p>Количество</p></th>
+                                    <th class="row-title"><p>Общая сумма</p></th>
+                                    <th class="row-title"><p></p></th>
+                                </tr>
+                            </tbody>
+                        </thead>
+                          <tr class="row-2">
+                              <td class="row-close close-1" data-title="product-remove"><a href="#"><i class="ion-close-circled"></i></a></td>
+                                <td class="product-name" data-title="Product"><a href="#">"Название продукта"</a></td>
+                                <td class="product-price" data-title="Price"><p>0.00$</p></td>
+                                <td class="product-quantity" data-title="Quantity">
+                                  <div class="quantity_filter">
+                                        <input type="button" value="-" class="minus">
+                                        <input class="quantity-number qty" type="text" value="2" min="1" max="10">
+                                        <input type="button" value="+" class="plus">
+                                   </div>
+                                </td>
+                                <td class="product-total" data-title="Subprice"><p>0.00$</p></td>
+                                <td class="row-close close-2" data-title="product-remove"><a href="#"><i class="ion-close-circled"></i></a></td>
+                            </tr>
+                            <tr class="row-3">
+                              <td class="row-close close-1" data-title="product-remove"><a href="#"><i class="ion-close-circled"></i></a></td>
+                                <td class="product-name" data-title="Product"><a href="#">"Название продукта"</a></td>
+                                <td class="product-price" data-title="Price"><p>0.00$</p></td>
+                                <td class="product-quantity" data-title="Quantity">
+                                    <div class="quantity_filter">
+                                        <input type="button" value="-" class="minus">
+                                        <input class="quantity-number qty" type="text" value="1" min="1" max="10">
+                                        <input type="button" value="+" class="plus">
+                                    </div>
+                                </td>
+                                <td class="product-total" data-title="Subprice"><p>0.00$</p></td>
+                                <td class="row-close close-2" data-title="product-remove"><a href="#"><i class="ion-close-circled"></i></a></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- End Cart Section -->
+
+
+<!-- Start Cart Box Section -->
+<section class="cart-box-section pb_large">
+	<div class="container">
+    	<div class="row justify-content-between">
+        	<div class="col-lg-4 col-md-6">
+            	<div class="cart-inner-box box-1 text-center">
+                	<div class="ci-title">
+                    	<h6>Адрес для доставки</h6>
+                    </div>
+                    <div class="ci-caption">
+                    	<p>Введите ваш адрес для доставки</p>
+                        <form>
+                        	<input required="" class="form-control" type="text" placeholder="Coupon Code">
+                            <button class="btn btn-secondary" type="submit">Оправить</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="cart-inner-box box-2 text-center">
+                        <div class="ci-title">
+                                <h6>Обзор заказов</h6>
+                                </div>
+                            <div class="ci-caption">
+                            <ul>
+                                <li>Сумма товаров<span>0.00$</span></li>
+                                <li>Итого к оплате<span>0.00$</span></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+        </div>
+    </div>
+</section>
+<!-- End Cart Box Section -->
+
+<!-- Start Footer Section -->
+<footer>
+	<div class="footer-top">
+    	<div class="container">
+        	<div class="row">
+            	<div class="col-lg-4 col-md-6 col-sm-12 order-md-last">
+                	<div class="footer-box box-4">
+                    	<h6 class="fb-title">CONTACT INFO</h6>
+                        <div class="fb-iner">
+                        	<ul>
+                            	<li><i class="ion-ios-location-outline"></i><p>c/o Giunti International Division Via G.B. Pirelli, 30 20124 Milan</p></li>
+                                <li><i class="ion-ios-telephone-outline"></i><p>+025 2155 3255</p></li>
+                                <li><i class="ion-ios-email-outline"></i><a href="#">info@gmail.com</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+                </div>
+                <div class="col-md-6">
+                    <div class="footer-social text-md-right">
+                    	<ul>
+                        	<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                            <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                            <li><a href="#"><i class="fa fa-pinterest-p"></i></a></li>
+                            <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+<!-- End Footer Section -->
+
+<!-- Home Popup Section -->
+<!-- End Screen Load Popup Section -->
+
+
+</body>
+
+</html>
+{% endblock %}

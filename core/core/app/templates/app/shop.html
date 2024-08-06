@@ -4,12 +4,12 @@
 <html lang="en">
 <body>
 <!-- Start Breadcrumbs Section -->
-<section class="breadcrumbs-section background_bg" data-img-src="image/shop-breadcrumbs-img.jpg">
+<section class="breadcrumbs-section background_bg" data-img-src="{% static 'image/catalog.jpg' %}">
 	<div class="container">
     	<div class="row">
         	<div class="col-md-12">
                 <div class="page_title text-center">
-                	<h1>shop</h1>
+                	<h1>PUREBITE</h1>
 
                 </div>
             </div>
@@ -24,14 +24,7 @@
         	<div class="col-xl-9 col-lg-8 col-md-12">
             	<div class="shop-options d-sm-flex justify-content-between align-items-center">
                 	<div class="sorting-option">
-                    	<select class="sorting-items" name="category">
-                            <option value="menu_order" selected="selected">Default sorting</option>
-                            <option value="popularity">Sort by popularity</option>
-                            <option value="rating">Sort by average rating</option>
-                            <option value="date">Sort by newness</option>
-                            <option value="price">Sort by price: low to high</option>
-                            <option value="price-desc">Sort by price: high to low</option>
-                        </select>
+
                     </div>
                     <div class="showing-items">
                         <p>Showing 1–9 of 15 results</p>
@@ -346,19 +339,19 @@
                     </div>
         		</div>
             </div>
-            <div class="col-xl-3 col-lg-4 col-md-12 order-lg-first"> 
-            	<div class="shop-sidebar">
-                	<div class="side-quantity-box side-box">
-                    	<div class="side-box-title">
-                        	<h6>Categories</h6>
+<div class="col-xl-3 col-lg-4 col-md-12 order-lg-first">
+              <div class="shop-sidebar">
+                  <div class="side-quantity-box side-box">
+                      <div class="side-box-title">
+                          <h6>Категории</h6>
                         </div>
                         <div class="quantity-box-detail">
-                        	<ul>
-                            	<li><a href="#">Women<span>(10)</span></a></li>
-                                <li><a href="#">Men<span>(05)</span></a></li>
-                                <li><a href="#">Footwear<span>(15)</span></a></li>
-                                <li><a href="#">Bags And Backpacks<span>(20)</span></a></li>
-                                <li><a href="#">Accessories<span>(07)</span></a></li>
+                          <ul>
+                              <li><a href="#">Фрукты<span></span></a></li>
+                                <li><a href="#">Овощи<span></span></a></li>
+                                <li><a href="#">Соки<span></span></a></li>
+                                <li><a href="#">Ягоды<span></span></a></li>
+                                <li><a href="#">Органические продукты<span></span></a></li>
                             </ul>
                         </div>
                     </div>
@@ -367,135 +360,30 @@
                             <h6>Filter</h6>
                         </div>
                         <div class="filter-box-detail">
-                            <div id="slider-range"></div>
+                            <div id="slider-range" class="ui-slider ui-slider-horizontal ui-widget ui-widget-content ui-corner-all"><div class="ui-slider-range ui-widget-header ui-corner-all" style="left: 0%; width: 100%;"></div><span class="ui-slider-handle ui-state-default ui-corner-all" tabindex="0" style="left: 0%;"></span><span class="ui-slider-handle ui-state-default ui-corner-all" tabindex="0" style="left: 100%;"></span></div>
                             <div class="price_slider_amount">
                                 <div class="slider-values d-flex align-items-center">
-                                	<p>Price</p>
-                                    <input type="text" id="amount" name="price"  placeholder="Add Your Price" /> 
+                                  <p>Price</p>
+                                    <input type="text" id="amount" name="price" placeholder="Add Your Price">
                                 </div>
                             </div>
                         </div>
-                	</div>
-                    <div class="side-quantity-box side-box">
-                    	<div class="side-box-title">
-                        	<h6>color</h6>
-                        </div>
-                        <div class="quantity-box-detail">
-                        	<ul>
-                            	<li><a href="#">black<span>(10)</span></a></li>
-                                <li><a href="#">blue<span>(05)</span></a></li>
-                                <li><a href="#">red<span>(15)</span></a></li>
-                                <li><a href="#">white<span>(20)</span></a></li>
-                                <li><a href="#">grey<span>(07)</span></a></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="side-quantity-box side-box">
-                    	<div class="side-box-title">
-                        	<h6>recent Product</h6>
-                        </div>
-                        <div class="side-recent-product">
-                        	<div class="cart-prodect d-flex">
-                                <div class="cart-img">
-                                    <img src="image/recent-product-1.png" alt="recent-product">
-                                </div>
-                                <div class="cart-product">
-                                    <a href="product-detail.html">Ornare sed consequat</a>
-                                    <a href="product-detail.html" class="cp-comments"><i class="fa fa-comments"></i> 5 Comments</a>
-                                </div>
-                            </div>
-                            <div class="cart-prodect d-flex">
-                                <div class="cart-img">
-                                    <img src="image/recent-product-2.png" alt="recent-product">
-                                </div>
-                                <div class="cart-product">
-                                    <a href="product-detail.html">Pellentesque posuere</a>
-                                    <a href="product-detail.html" class="cp-comments"><i class="fa fa-comments"></i> 5 Comments</a>
-                                </div>
-                            </div>
-                            <div class="cart-prodect d-flex">
-                                <div class="cart-img">
-                                    <img src="image/recent-product-3.png" alt="recent-product">
-                                </div>
-                                <div class="cart-product">
-                                    <a href="product-detail.html">Pellentesque posuere</a>
-                                    <a href="product-detail.html" class="cp-comments"><i class="fa fa-comments"></i> 5 Comments</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        
+                  </div>
+
+
+
     </div>
 </section>
 <!-- End Shop Section -->
 
 <!-- Start Footer Section -->
-<footer>
-	<div class="footer-top">
-    	<div class="container">
-        	<div class="row">
-            	<div class="col-lg-4 col-md-12 col-sm-12">
-                	<div class="footer-box box-1">
-                    	<h6 class="fb-title">ABOUT US</h6>
-                        <div class="fb-iner">
-                        	<p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.</p>
-                        </div>
-                    </div> 
-                </div>
-            	<div class="col-lg-4 col-md-6 col-sm-12 order-md-last">
-                	<div class="footer-box box-4">
-                    	<h6 class="fb-title">CONTACT INFO</h6>
-                        <div class="fb-iner">
-                        	<ul>
-                            	<li><i class="ion-ios-location-outline"></i><p>c/o Giunti International Division Via G.B. Pirelli, 30 20124 Milan</p></li>
-                                <li><i class="ion-ios-telephone-outline"></i><p>+025 2155 3255</p></li>
-                                <li><i class="ion-ios-email-outline"></i><a href="#">info@gmail.com</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-2 col-md-3 col-6">
-                	<div class="footer-box box-2">
-                    	<h6 class="fb-title">CATEGORIES</h6>
-                        <div class="fb-iner">
-                        	<ul class="footer-links">
-                            	<li><a href="#">Fashion Sneakers</a></li>
-                                <li><a href="#">Jackets</a></li>
-                                <li><a href="#">Outdoor Shop</a></li>
-                                <li><a href="#">Pants</a></li>
-                                <li><a href="#">Shirts & Tops</a></li>
-                                <li><a href="#">Swim Shop</a></li>
-                                <li><a href="#">Swimwear</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-2 col-md-3 col-6">
-                	<div class="footer-box box-3">
-                    	<h6 class="fb-title">MY ACCOUNT</h6>
-                        <div class="fb-iner">
-                        	<ul class="footer-links">
-                            	<li><a href="#">Orders</a></li>
-                                <li><a href="#">Compare</a></li>
-                                <li><a href="#">Wishlist</a></li>
-                                <li><a href="#">Log In</a></li>
-                                <li><a href="#">Register</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+
     <div class="footer-btm">
     	<div class="container">
         	<div class="row">
             	<div class="col-md-6">
                 	<div class="copyright">
-                    	<p>Copyright © 2018. All Rights Reserved.</p>
+                    	<p>Copyright © 2024. All Rights Reserved.</p>
                     </div>
                 </div>
                 <div class="col-md-6">
